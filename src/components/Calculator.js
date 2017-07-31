@@ -20,7 +20,11 @@ export default class Calculator extends React.Component {
         return (
             <div id="calculator">
                 <Display valor = {this.state.displayValue}/>
-                <Keyboard/>
+                <Keyboard valueInMemory={this.state.resultLastOperation}
+                          resultLastOperation={this.state.arithmeticOperation}
+                          displayValue={this.state.displayValue}
+                          cleanDisplayNextOperation={this.state.cleanDisplay}
+                          decimalMode={this.state.decimalMode} />
             </div>
         )
     }
