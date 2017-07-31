@@ -5,7 +5,7 @@ const CHANGE = 'change'
 let _store = {
     displayValue:'0',
     resultLastOperation:0,
-    cle:false,
+    cleanDisplay:false,
     arithmeticOperation: undefined,
     decimalMode: false,
 }
