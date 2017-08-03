@@ -1,7 +1,7 @@
 module.exports = {
   entry: {
     app: __dirname + '/src',
-    components: [__dirname + '/src/components/Component.js']
+    components: [__dirname + '/src/components/Calculator.js']
   },
   output: {
     path: 'bundles',
