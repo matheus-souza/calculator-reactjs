@@ -1,7 +1,7 @@
 import React from 'react'
-import Button from './Button'
+import Botao from './Button'
 
-export default class Keyboard extends React.Component {
+export default class Keyboard extends React.Component{
     constructor(props){
         super(props)
     }
@@ -9,87 +9,46 @@ export default class Keyboard extends React.Component {
     render(){
         return(
             <div id="keyboard">
-                <Button valueInMemory={this.props.vulueInMemory}
-                        displayValue={this.props.resultLastOperation}
-                        cleanDisplayNextOperation={this.props.cleanDisplayNextOperation}
-                        decimalMode={this.props.decimalMode} valor="c"/>
-                <Button valueInMemory={this.props.vulueInMemory}
-                        displayValue={this.props.resultLastOperation}
-                        cleanDisplayNextOperation={this.props.cleanDisplayNextOperation}
-                        decimalMode={this.props.decimalMode} valor="+/-"/>
-                <Button valueInMemory={this.props.vulueInMemory}
-                        displayValue={this.props.resultLastOperation}
-                        cleanDisplayNextOperation={this.props.cleanDisplayNextOperation}
-                        decimalMode={this.props.decimalMode} valor="%"/>
-                <Button valueInMemory={this.props.vulueInMemory}
-                        displayValue={this.props.resultLastOperation}
-                        cleanDisplayNextOperation={this.props.cleanDisplayNextOperation}
-                        decimalMode={this.props.decimalMode} valor="/"/>
-                <Button valueInMemory={this.props.vulueInMemory}
-                        displayValue={this.props.resultLastOperation}
-                        cleanDisplayNextOperation={this.props.cleanDisplayNextOperation}
-                        decimalMode={this.props.decimalMode} valor="7"/>
-                <Button valueInMemory={this.props.vulueInMemory}
-                        displayValue={this.props.resultLastOperation}
-                        cleanDisplayNextOperation={this.props.cleanDisplayNextOperation}
-                        decimalMode={this.props.decimalMode} valor="8"/>
-
-                <Button valueInMemory={this.props.vulueInMemory}
-                        displayValue={this.props.resultLastOperation}
-                        cleanDisplayNextOperation={this.props.cleanDisplayNextOperation}
-                        decimalMode={this.props.decimalMode} valor="9"/>
-                <Button valueInMemory={this.props.vulueInMemory}
-                        displayValue={this.props.resultLastOperation}
-                        cleanDisplayNextOperation={this.props.cleanDisplayNextOperation}
-                        decimalMode={this.props.decimalMode} valor="*"/>
-                <Button valueInMemory={this.props.vulueInMemory}
-                        displayValue={this.props.resultLastOperation}
-                        cleanDisplayNextOperation={this.props.cleanDisplayNextOperation}
-                        decimalMode={this.props.decimalMode} valor="4"/>
-                <Button valueInMemory={this.props.vulueInMemory}
-                        displayValue={this.props.resultLastOperation}
-                        cleanDisplayNextOperation={this.props.cleanDisplayNextOperation}
-                        decimalMode={this.props.decimalMode} valor="5"/>
-                <Button valueInMemory={this.props.vulueInMemory}
-                        displayValue={this.props.resultLastOperation}
-                        cleanDisplayNextOperation={this.props.cleanDisplayNextOperation}
-                        decimalMode={this.props.decimalMode} valor="6"/>
-                <Button valueInMemory={this.props.vulueInMemory}
-                        displayValue={this.props.resultLastOperation}
-                        cleanDisplayNextOperation={this.props.cleanDisplayNextOperation}
-                        decimalMode={this.props.decimalMode} valor="+"/>
-                <Button valueInMemory={this.props.vulueInMemory}
-                        displayValue={this.props.resultLastOperation}
-                        cleanDisplayNextOperation={this.props.cleanDisplayNextOperation}
-                        decimalMode={this.props.decimalMode} valor="4"/>
-                <Button valueInMemory={this.props.vulueInMemory}
-                        displayValue={this.props.resultLastOperation}
-                        cleanDisplayNextOperation={this.props.cleanDisplayNextOperation}
-                        decimalMode={this.props.decimalMode} valor="5"/>
-                <Button valueInMemory={this.props.vulueInMemory}
-                        displayValue={this.props.resultLastOperation}
-                        cleanDisplayNextOperation={this.props.cleanDisplayNextOperation}
-                        decimalMode={this.props.decimalMode} valor="6"/>
-                <Button valueInMemory={this.props.vulueInMemory}
-                        displayValue={this.props.resultLastOperation}
-                        cleanDisplayNextOperation={this.props.cleanDisplayNextOperation}
-                        decimalMode={this.props.decimalMode} valor="-"/>
-                <Button valueInMemory={this.props.vulueInMemory}
-                        displayValue={this.props.resultLastOperation}
-                        cleanDisplayNextOperation={this.props.cleanDisplayNextOperation}
-                        decimalMode={this.props.decimalMode} valor="0"/>
-                <Button valueInMemory={this.props.vulueInMemory}
-                        displayValue={this.props.resultLastOperation}
-                        cleanDisplayNextOperation={this.props.cleanDisplayNextOperation}
-                        decimalMode={this.props.decimalMode} valor="."/>
-                <Button valueInMemory={this.props.vulueInMemory}
-                        displayValue={this.props.resultLastOperation}
-                        cleanDisplayNextOperation={this.props.cleanDisplayNextOperation}
-                        decimalMode={this.props.decimalMode} valor="pi"/>
-                <Button valueInMemory={this.props.vulueInMemory}
-                        displayValue={this.props.resultLastOperation}
-                        cleanDisplayNextOperation={this.props.cleanDisplayNextOperation}
-                        decimalMode={this.props.decimalMode} valor="="/>
+                <Botao valueInMemory={this.props.valueInMemory} previousOperation={this.props.previousOperation} displayValue={this.props.displayValue} cleanInNextOperation={this.props.cleanInNextOperation}
+                       decimalEntry={this.props.decimalEntry} value="c"/>
+                <Botao valueInMemory={this.props.valueInMemory} previousOperation={this.props.previousOperation} displayValue={this.props.displayValue} cleanInNextOperation={this.props.cleanInNextOperation}
+                       decimalEntry={this.props.decimalEntry} value="+/-"/>
+                <Botao valueInMemory={this.props.valueInMemory} previousOperation={this.props.previousOperation} displayValue={this.props.displayValue} cleanInNextOperation={this.props.cleanInNextOperation}
+                       decimalEntry={this.props.decimalEntry} value="%"/>
+                <Botao valueInMemory={this.props.valueInMemory} previousOperation={this.props.previousOperation} displayValue={this.props.displayValue} cleanInNextOperation={this.props.cleanInNextOperation}
+                       decimalEntry={this.props.decimalEntry} value="/"/>
+                <Botao valueInMemory={this.props.valueInMemory} previousOperation={this.props.previousOperation} displayValue={this.props.displayValue} cleanInNextOperation={this.props.cleanInNextOperation}
+                       decimalEntry={this.props.decimalEntry} value="7"/>
+                <Botao valueInMemory={this.props.valueInMemory} previousOperation={this.props.previousOperation} displayValue={this.props.displayValue} cleanInNextOperation={this.props.cleanInNextOperation}
+                       decimalEntry={this.props.decimalEntry} value="8"/>
+                <Botao valueInMemory={this.props.valueInMemory} previousOperation={this.props.previousOperation} displayValue={this.props.displayValue} cleanInNextOperation={this.props.cleanInNextOperation}
+                       decimalEntry={this.props.decimalEntry} value="9"/>
+                <Botao valueInMemory={this.props.valueInMemory} previousOperation={this.props.previousOperation} displayValue={this.props.displayValue} cleanInNextOperation={this.props.cleanInNextOperation}
+                       decimalEntry={this.props.decimalEntry} value="*"/>
+                <Botao valueInMemory={this.props.valueInMemory} previousOperation={this.props.previousOperation} displayValue={this.props.displayValue} cleanInNextOperation={this.props.cleanInNextOperation}
+                       decimalEntry={this.props.decimalEntry} value="4"/>
+                <Botao valueInMemory={this.props.valueInMemory} previousOperation={this.props.previousOperation} displayValue={this.props.displayValue} cleanInNextOperation={this.props.cleanInNextOperation}
+                       decimalEntry={this.props.decimalEntry} value="5"/>
+                <Botao valueInMemory={this.props.valueInMemory} previousOperation={this.props.previousOperation} displayValue={this.props.displayValue} cleanInNextOperation={this.props.cleanInNextOperation}
+                       decimalEntry={this.props.decimalEntry} value="6"/>
+                <Botao valueInMemory={this.props.valueInMemory} previousOperation={this.props.previousOperation} displayValue={this.props.displayValue} cleanInNextOperation={this.props.cleanInNextOperation}
+                       decimalEntry={this.props.decimalEntry} value="+"/>
+                <Botao valueInMemory={this.props.valueInMemory} previousOperation={this.props.previousOperation} displayValue={this.props.displayValue} cleanInNextOperation={this.props.cleanInNextOperation}
+                       decimalEntry={this.props.decimalEntry} value="1"/>
+                <Botao valueInMemory={this.props.valueInMemory} previousOperation={this.props.previousOperation} displayValue={this.props.displayValue} cleanInNextOperation={this.props.cleanInNextOperation}
+                       decimalEntry={this.props.decimalEntry} value="2"/>
+                <Botao valueInMemory={this.props.valueInMemory} previousOperation={this.props.previousOperation} displayValue={this.props.displayValue} cleanInNextOperation={this.props.cleanInNextOperation}
+                       decimalEntry={this.props.decimalEntry} value="3"/>
+                <Botao valueInMemory={this.props.valueInMemory} previousOperation={this.props.previousOperation} displayValue={this.props.displayValue} cleanInNextOperation={this.props.cleanInNextOperation}
+                       decimalEntry={this.props.decimalEntry} value="-"/>
+                <Botao valueInMemory={this.props.valueInMemory} previousOperation={this.props.previousOperation} displayValue={this.props.displayValue} cleanInNextOperation={this.props.cleanInNextOperation}
+                       decimalEntry={this.props.decimalEntry} value="0"/>
+                <Botao valueInMemory={this.props.valueInMemory} previousOperation={this.props.previousOperation} displayValue={this.props.displayValue} cleanInNextOperation={this.props.cleanInNextOperation}
+                       decimalEntry={this.props.decimalEntry} value="."/>
+                <Botao valueInMemory={this.props.valueInMemory} previousOperation={this.props.previousOperation} displayValue={this.props.displayValue} cleanInNextOperation={this.props.cleanInNextOperation}
+                       decimalEntry={this.props.decimalEntry} value="pi"/>
+                <Botao valueInMemory={this.props.valueInMemory} previousOperation={this.props.previousOperation} displayValue={this.props.displayValue} cleanInNextOperation={this.props.cleanInNextOperation}
+                       decimalEntry={this.props.decimalEntry} value="="/>
             </div>
         )
     }
