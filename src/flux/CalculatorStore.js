@@ -17,8 +17,8 @@ class CalculatorStore extends  EventEmmiter{
         return _store.valueAtDisplay;
     }
 
-    setValueAtDisplay(valor){
-        _store.valueAtDisplay = valor;
+    setValueAtDisplay(value){
+        _store.valueAtDisplay = value;
         this.emit(CHANGE);
     }
 
@@ -26,8 +26,8 @@ class CalculatorStore extends  EventEmmiter{
         return _store.resultLastOperation;
     }
 
-    setResultLastOperation(valor){
-        _store.resultLastOperation = valor;
+    setResultLastOperation(value){
+        _store.resultLastOperation = value;
         this.emit(CHANGE);
     }
 
@@ -35,8 +35,8 @@ class CalculatorStore extends  EventEmmiter{
         return _store.cleanDisplay;
     }
 
-    setCleanDisplay(valor){
-        _store.cleanDisplay = valor;
+    setCleanDisplay(value){
+        _store.cleanDisplay = value;
         this.emit(CHANGE);
     }
 
@@ -44,8 +44,8 @@ class CalculatorStore extends  EventEmmiter{
         return _store.cleanDisplay;
     }
 
-    setArithmeticOperation(valor){
-        _store.arithmeticOperation = valor;
+    setArithmeticOperation(value){
+        _store.arithmeticOperation = value;
         this.emit(CHANGE);
     }
 
@@ -53,8 +53,8 @@ class CalculatorStore extends  EventEmmiter{
         return _store.entryDecimalMode;
     }
 
-    setEntryDecimalMode(valor){
-        return _store.entryDecimalMode = valor;
+    setEntryDecimalMode(value){
+        return _store.entryDecimalMode = value;
         this.emit(CHANGE);
     }
 
