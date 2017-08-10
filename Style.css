@@ -11,11 +11,11 @@ body {
 }
 #calculator {
     width: 360px;
-    background: #999999;
+    background: #edebee;
     margin: auto;
 }
 .button:nth-of-type(4n) {
-    background:#e89748;
+    background: #e8d726;
 }
 .button {
     float: left;
